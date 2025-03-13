@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(191, 215, 234, 1);
+    color: green;
+    text-align: center;
+    font-family: sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(60, 60, 60);
+}
+
+p {
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+a {
+    color: rgb(60, 60, 60);
+    font-size: 20px;
+}
