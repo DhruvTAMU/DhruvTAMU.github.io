@@ -55,13 +55,16 @@ a {
     font-weight: bold;
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
     border:2px solid rgb(0, 0, 0);
+    transition: all 0.2s;
+    margin: 1vh;
 }
 
 .navlink:hover {
-    transition: all 0.1s;
-    transform: scale(1.1);
     background: rgb(235, 235, 235);
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+    transform: scale(1.1);
+
 }
 
 .navlinkimg {
@@ -97,7 +100,7 @@ h2 {
 
 .headerdiv {
     border: 2px solid rgb(0, 0, 0);
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(235, 235, 235, 1);
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
 }
@@ -113,7 +116,40 @@ h2 {
 
 .footerdiv {
     border: 2px solid rgb(0, 0, 0);
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(235, 235, 235, 1);
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
+}
+
+.drpdwn {
+  position: relative;
+  display: inline-block;
+}
+
+.drpdwnc {
+    display: none;
+    position: absolute;
+}
+
+.drpdwn:hover .drpdwnc {display: block;}
+
+.drpnavlink {
+    display: inline-block;
+    color: rgba(235, 235, 235, 1);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
+    border:2px solid rgb(0, 0, 0);
+    margin-bottom: 5px;
+    transition: all 0.2s;
+}
+
+.drpnavlink:hover {
+    background: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+    transform: scale(1.1);
 }
