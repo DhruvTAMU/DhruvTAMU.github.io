@@ -56,7 +56,8 @@ a {
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
     border:2px solid rgb(0, 0, 0);
     transition: all 0.2s;
-    margin: 1vh;
+    margin-inline: 0.35vw;
+    margin-block: 0.5vh;
 }
 
 .navlink:hover {
@@ -100,7 +101,7 @@ h2 {
 
 .headerdiv {
     border: 2px solid rgb(0, 0, 0);
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(235, 235, 235, 1);
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
 }
@@ -114,9 +115,15 @@ h2 {
     width: 70vw;
 }
 
+.transitioning {
+    animation: fadein 0.5s forwards;
+    opacity: 0;
+    transform: translateY(50vh);
+}
+
 .footerdiv {
     border: 2px solid rgb(0, 0, 0);
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(235, 235, 235, 1);
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
 }
@@ -152,4 +159,16 @@ h2 {
     color: rgb(0, 0, 0);
     transition: all 0.2s;
     transform: scale(1.1);
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+        transform: translateY(50vh);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0vh);
+    }
 }
