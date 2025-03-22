@@ -19,6 +19,7 @@ p {
     font-size: 2vw;
     color: rgba(0, 0, 0, 1);
     text-shadow: none;
+    vertical-align: middle;
 }
 
 .bodyimg {
@@ -30,6 +31,7 @@ p {
     border: 2px solid rgb(0, 0, 0);
     margin-block: 20px;
     border-radius: 5vw;
+    vertical-align: middle;
 }
 
 .headerimg {
@@ -39,6 +41,7 @@ p {
     width: 70%;
     margin-block: 20px;
     filter: drop-shadow(4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4));
+    vertical-align: middle;
 }
 
 .footerlogo {
@@ -48,6 +51,7 @@ p {
     width: 70%;
     margin-block: 20px;
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
 }
 
 iframe {
@@ -69,7 +73,7 @@ a {
 .navlink {
     display: inline-block;
     color: rgba(235, 235, 235, 1);
-    font-size: 30px;
+    font-size: 2vw;
     background-color: rgba(0, 0, 0, 1);
     padding: 10px;
     text-decoration: none;
@@ -123,6 +127,15 @@ h2 {
 .columnsformat {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.rowsformat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: middle;
 }
 
 .headernav {
