@@ -130,7 +130,8 @@ h2 {
     padding-block: none
     background-color: none;
     box-shadow: none;
-    margin-bottom: 50px;
+    margin-bottom: 0vw;
+    justify-content: center;
 }
 
 .columnsformat {
