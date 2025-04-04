@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(235, 235, 235, 1);
+    background-color: #EBEBEB;
     color: green;
     text-align: center;
     font-family: helvetica;
@@ -79,7 +79,7 @@ a {
 
 .navlink {
     display: inline-block;
-    color: rgba(235, 235, 235, 1);
+    color: #EBEBEB;
     font-size: 2vw;
     background-color: rgba(0, 0, 0, 1);
     padding: 10px;
@@ -151,7 +151,7 @@ h2 {
 .headernav {
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    background-color: rgba(120, 0, 0, 1);
+    background-color: #004080;
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
 }
 
@@ -164,7 +164,7 @@ h2 {
 }
 
 .bodydiv {
-    background-color: rgba(235, 235, 235, 1);
+    background-color: #EBEBEB;
     text-align: center;
     font-family: helvetica;
     margin: auto;
@@ -180,7 +180,7 @@ h2 {
     margin-top: 4vw;
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
-    background-color: rgba(120, 0, 0, 1);
+    background-color: #004080;
     box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
 }
 
@@ -200,7 +200,7 @@ h2 {
 
 .drpnavlink {
     display: inline-block;
-    color: rgba(235, 235, 235, 1);
+    color: #EBEBEB;
     font-size: 2vw;
     background-color: rgba(0, 0, 0, 1);
     padding: 10px;
