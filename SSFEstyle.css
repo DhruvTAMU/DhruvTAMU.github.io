@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     color: rgba(0, 0, 0, 1);
     background-color: none;
     padding: 20px;
@@ -16,7 +16,7 @@ h1 {
 }
 
 p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: rgba(0, 0, 0, 1);
     text-shadow: none;
     vertical-align: middle;
@@ -25,9 +25,9 @@ p {
 
 .tricolorcolumns {
     background-color: rgb(205,205,205);
-    padding: 2vw;
+    padding: 1.5vw;
     margin-inline: 1vw;
-    border-radius: 1vw;
+    border-radius: 0.5vw;
 }
 
 .bodyimg {
@@ -36,9 +36,9 @@ p {
     box-shadow: none;
     background-color: rgba(215, 215, 215, 1);
     width: 50%;
-    border: 2px solid rgb(0, 0, 0);
-    margin-block: 20px;
-    border-radius: 2vw;
+    border: 0.2vw solid rgb(0, 0, 0);
+    margin-inline: 3vw;
+    border-radius: 1.5vw;
     vertical-align: middle;
 }
 
@@ -47,8 +47,8 @@ p {
     margin: auto;
     box-shadow: none;
     width: 50%;
-    margin-block: 20px;
-    filter: drop-shadow(4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4));
+    margin-block: 0vw;
+    filter: drop-shadow(0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4));
     vertical-align: middle;
 }
 
@@ -58,43 +58,43 @@ p {
     display: block;
     margin: auto;
     box-shadow: none;
-    width: 10%;
-    margin-block: 20px;
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
+    width: 7.5%;
+    margin-block: 1vw;
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
     vertical-align: middle;
 }
 
 iframe {
     display: block;
     margin: auto;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
+    border: 0.2vw solid rgb(0, 0, 0);
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100vh;
-    border-radius: 3vw;
+    border-radius: 1.5vw;
 }
 
 a {
     color: rgb(0, 0, 0);
     font-size: 30px;
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
     margin: 0%;
 }
 
 .navlink {
     display: inline-block;
     color: #EBEBEB;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: rgba(0, 0, 0, 1);
-    padding: 1vw;
+    padding: 0.75vw;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
-    border:2px solid rgb(0, 0, 0);
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+    border:0.2vw solid rgb(0, 0, 0);
     transition: all 0.2s;
-    margin-inline: 0.4vw;
-    margin-block: 0.5vw;
-    border-radius: 1vw;
+    margin-inline: 0.35vw;
+    margin-block: 0.25vw;
+    border-radius: 0.5vw;
 }
 
 .navlink:hover {
@@ -107,7 +107,7 @@ a {
 
 .navlinkimg {
     display: inline-block;
-    height: 2.5vw;
+    height: 1.5vw;
     vertical-align: middle;
 }
 
@@ -115,12 +115,12 @@ hr {
     height:4px;
     background-color:rgb(225, 225, 225);
     border:4px solid rgb(0, 0, 0);
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
 }
 
 h2 {
     color: rgba(0, 0, 0, 1);
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
     border: none;
 
@@ -154,17 +154,18 @@ h2 {
 }
 
 .headernav {
-    border: 2px solid rgb(0, 0, 0);
+    border: 0.2vw solid rgb(0, 0, 0);
     padding: 0vw;
     background-color: #145494;
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
-    border-bottom-left-radius: 3vw;
-    border-bottom-right-radius: 3vw;
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 0vw;
+    border-bottom-right-radius: 0vw;
 }
 
 .navmenu {
     border: none;
-    padding: 20px;
+    padding-block: 2vw;
+    padding-right: 1vw;
     background-color: none;
     box-shadow: none;
     z-index: 1;
@@ -185,13 +186,13 @@ h2 {
 
 .footernav {
     margin-top: 4vw;
-    border: 2px solid rgb(0, 0, 0);
+    border: 0.2vw solid rgb(0, 0, 0);
     padding-inline: 2vw;
-    padding-block: 1vw;
+    padding-block: 0.5vw;
     background-color: #145494;
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
-    border-top-left-radius: 3vw;
-    border-top-right-radius: 3vw;
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 0vw;
+    border-top-right-radius: 0vw;
 }
 
 .drpdwn {
@@ -211,16 +212,18 @@ h2 {
 .drpnavlink {
     display: inline-block;
     color: #EBEBEB;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: rgba(0, 0, 0, 1);
-    padding: 10px;
+    padding: 0.75vw;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 4.2px 8.3px 8.3px rgba(0, 0, 0, 0.4);
-    border:2px solid rgb(0, 0, 0);
-    margin-bottom: 5px;
+    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+    border:0.2vw solid rgb(0, 0, 0);
     transition: all 0.2s;
-    border-radius: 1vw;
+    margin-inline: 0.4vw;
+    margin-block: 0.25vw;
+    border-radius: 0.5vw;
+    transition: all 0.2s;
 }
 
 .drpnavlink:hover {
