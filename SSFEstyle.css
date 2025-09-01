@@ -1,27 +1,75 @@
-body {
-    background-color: #EBEBEB;
-    color: green;
-    text-align: center;
-    font-family: helvetica;
-    margin: auto;
-}
+ /* built in elements*/
+    body {
+        background-color: #EBEBEB;
+        color: green;
+        text-align: center;
+        font-family: helvetica;
+        margin: auto;
+    }
 
-h1 {
-    font-size: 3vw;
-    color: rgba(0, 0, 0, 1);
-    background-color: none;
-    padding: 20px;
-    box-shadow: none;
-    text-shadow: none;
-}
+    h1 {
+        font-size: 3vw;
+        color: rgba(0, 0, 0, 1);
+        background-color: none;
+        padding: 20px;
+        box-shadow: none;
+        text-shadow: none;
+    }
 
-p {
-    font-size: 1.5vw;
-    color: rgba(0, 0, 0, 1);
-    text-shadow: none;
-    vertical-align: middle;
-    margin-inline: 2vw;
-}
+    p {
+        font-size: 1.5vw;
+        color: rgba(0, 0, 0, 1);
+        text-shadow: none;
+        vertical-align: middle;
+        margin-inline: 2vw;
+    }
+
+    iframe {
+        display: block;
+        margin: auto;
+        border: 0.2vw solid rgb(0, 0, 0);
+        box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100vh;
+        border-radius: 1.5vw;
+    }
+
+    a {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+        margin: 0%;
+    }
+
+    hr {
+        height:4px;
+        background-color:rgb(225, 225, 225);
+        border:4px solid rgb(0, 0, 0);
+        box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+        color: rgba(0, 0, 0, 1);
+        font-size: 2vw;
+        font-weight: bold;
+        border: none;
+
+        background-color: none;
+        padding: 20px;
+        width: 70%;
+        margin: auto;
+    }
+
+    h3 {
+        color: rgba(0, 0, 0, 1);
+        font-size: 1.5vw;
+        transition: all 0.2s;
+        border: 1px solid black;
+        background-color: rgba(155, 185, 255, 0.4);
+        box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
+        border-radius: 0.5vw;
+        padding: 0.75vw;
+    }
 
 .tricolorcolumns {
     background-color: rgb(205,205,205);
@@ -64,23 +112,6 @@ p {
     vertical-align: middle;
 }
 
-iframe {
-    display: block;
-    margin: auto;
-    border: 0.2vw solid rgb(0, 0, 0);
-    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100vh;
-    border-radius: 1.5vw;
-}
-
-a {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
-    margin: 0%;
-}
-
 .navlink {
     display: inline-block;
     color: #EBEBEB;
@@ -109,25 +140,6 @@ a {
     display: inline-block;
     height: 1.5vw;
     vertical-align: middle;
-}
-
-hr {
-    height:4px;
-    background-color:rgb(225, 225, 225);
-    border:4px solid rgb(0, 0, 0);
-    box-shadow: 0.25vw 0.5vw 0.5vw rgba(0, 0, 0, 0.4);
-}
-
-h2 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 2vw;
-    font-weight: bold;
-    border: none;
-
-    background-color: none;
-    padding: 20px;
-    width: 70%;
-    margin: auto;
 }
 
 .pcontainer {
@@ -179,11 +191,6 @@ h2 {
     width: 85vw;
 }
 
-.transitioning {
-    animation: fadein 0.75s forwards;
-    transform: translateY(50vh);
-}
-
 .footernav {
     margin-top: 4vw;
     border: 0.2vw solid rgb(0, 0, 0);
@@ -205,9 +212,39 @@ h2 {
     display: none;
     position: absolute;
     z-index: 1;
+    opacity: 0%;
+    transition: all 0.2s;
 }
 
-.drpdwn:hover .drpdwnc {display: block;}
+.drpdwnfaq {
+    position: relative;
+    display: block;
+    width: 60%;
+    margin: auto;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+.drpdwnt {
+    opacity: 0%;
+    display: block;
+    z-index: 1;
+    transition: all 0.2s;
+    max-height: 0vw;
+}
+
+.drpdwn:hover .drpdwnc {transition: all 0.2s; display: block; opacity: 100%}
+
+.drpdwnfaq:hover .drpdwnt {
+  opacity: 1;
+  display: inline;
+  transition: all 0.2s;
+}
+
+.drpdwnfaq:hover h3 {
+  transition: all 0.2s;
+  background-color: rgba(155, 185, 255, 1.0);
+}
 
 .drpnavlink {
     display: inline-block;
@@ -233,12 +270,16 @@ h2 {
     transform: scale(1.1);
 }
 
+.transitioning {
+    animation: fadein 0.75s forwards;
+}
+
 @keyframes fadein {
     from{
-        transform: translateY(50vh);
+        transform: translateY(20vh); opacity: 30%;
     }
 
     to{
-        transform: translateY(0vh);
+        transform: translateY(0vh); opacity: 100%;
     }
 }
