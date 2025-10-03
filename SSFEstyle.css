@@ -13,8 +13,6 @@
         padding: 1vw;
         box-shadow: none;
         text-shadow: none;
-        text-align: left;
-        text-indent: 25%;
         margin-bottom: 0vw;
     }
 
@@ -47,10 +45,11 @@
         height:0.125vw;
         background-color:rgb(225, 225, 225);
         border:0.25vw solid rgb(0, 0, 0);
-        margin:0;
+        margin:auto;
+        margin-block: 0;
         border-radius: 0.5vw;
-        width: 65%;
-        justify-self: center;
+        width: 75%;
+        justify-content: center;
     }
 
     h2 {
