@@ -2,8 +2,9 @@
 <html lang = "en">
 	<head>
 		<link rel="stylesheet" href="SSFEstyle.css">
-		<title>Society of Sonic Flight Engineers</title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<script src="script.js"></script>
+		<title>SSFE - Home</title>
+		<link rel="shortcut icon" type="image/png" href="SSFEcircle.png">
 		<meta charset="UTF-8">
 		<meta property="og:title" content="Society of Sonic Flight Engineers">
       	<meta property="og:description" content="">
@@ -11,79 +12,104 @@
       	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
+
 	<body>
-		<!-- header -->
-		<header class="headernav">
-			<div class="columnsformat">
-				<img class="headerimg" style="width: 22.5%; margin-inline: 0.5vw;" alt="logo" src="SSFElogonobg.png">
-				<nav class="navmenu">
-					<a class="navlink" href="index.html">Home</a>
-					<a class="navlink" href="SSFEabout.html">About Us</a>
-					<a class="navlink" href="SSFEprocess.html">Our Process</a>
-					<a class="navlink" href="SSFEsubteams.html">Subteams</a>
 
-					<div class="drpdwn">
-						<a class="navlink" href="SSFEprojects.html">Projects ⌄</a>
-							<div class="drpdwnc">
-							    <a class="drpnavlink" href="SSFEdesign1.html">Design 1</a>
-							    <a class="drpnavlink" href="SSFEdesign2.html">Design 2</a>
-					  		</div>
-					</div>
 
-					<a class="navlink" href="SSFEcalendar.html">Calendar</a>
-					<a class="navlink" href="SSFEapply.html">Apply</a>
-					<a class="navlink" href="SSFEdonate.html">Donate</a>
-					<a class="navlink" href="SSFEcontact.html">Contact Us</a>
-				</nav>
-			</div>
+		<header style="height: 10vh; position: fixed;">
+		  <div class="header-container">
+		    
+		    <!-- Left: Branding -->
+		    <div class="header-logo">
+		      <a href="New_Attempt.html" aria-label="Home">
+		        <img src="media/photos/SSFElogo.webp" alt="SSFE Logo" style="max-width: 10rem; padding: 1rem;">
+		      </a>
+		    </div>
 
+		    <!-- Center: Navigation -->
+		    <nav class="header-nav" aria-label="Main Navigation">
+		      <ul class="nav-list">
+		        <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+		        <li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
+		        <li class="nav-item"><a href="/pricing" class="nav-link">Pricing</a></li>
+		        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+		      </ul>
+		    </nav>
+
+		  </div>
 		</header>
 
-		<div class="bodydiv transitioning">
-			<h1>Home</h1>
-			<hr></hr>
 
-			<div class="rowsformat">
-					<div class="columnsformat">
-						<div class="rowsformat">
-							<p style="text-align: left; text-indent: 5%;"><b>SSFE</b> is an Aggie-run student organization dedicated to developing aircraft in the pursuit of setting new airspeed records. Through a collaborative design process, members learn to apply concepts in aerodynamics, structural analysis, and avionics/propulsion to achieve high-speed flight.</p>
-							<p class="tricolorcolumns" style="text-align: left;">SSFE Engineers have completed their first build - the Miles Mk.1! They are now in the process of designing and building Design 2, which will culminate in a Fly Day where members can finally see the results of their dedicated designs and build processes.</p>
-						</div>
+		<!-- Top "hero" section -->
+		<section class="media-hero-section glass" id="top-hero-section">
+			
+			<video autoplay muted loop playsinline>
+				<source src="media/videos/Rocket_Test.mp4" type="video/mp4">
+			</video>
+			
+			<div class="bottom-overlay-text" style="justify-content: center;">
+		        <h1>Society of Sonic Flight Engineers</h1>
+    		</div>
 
-						<img src="backgroundlessplane1.png" alt="Design 1" class="headerimg" style="max-width: 40%; margin-block: 0vw;">
-					</div>
-					<div class="columnsformat" style="margin-bottom: 2vw;">
-						<img src="groupPhoto2.jpg" alt="Group Photo" class="bodyimg" style="max-width:35%; margin-inline: 5vw;">
-						<div class="rowsformat">
-							<p style="text-align: center;">Our target
-							speed to surpass will be determined at the start of each design cycle, and the following two
-							semesters will be spent on aircraft development.</p>
+    		<!-- Hero Section Down Arrow -->
+    		<div class="bottom-overlay-text">
+		        <a href="#next-section" class="scroll-down-link" aria-label="Scroll Down" style="margin-inline: auto;" onclick="event.preventDefault(); document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });">
+				  <svg width="60" height="20" viewBox="0 0 60 20" fill="none" xmlns="http://w3.org">
+				    <path d="M2 2L30 16L58 2" stroke="var(--accent-color)" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter-clip"/>
+				  </svg>
+				</a>
+    		</div>
 
-							<p style="text-align: center">Amidst all of SSFE's successes and failures, we seek to foster a collaborative environment that demonstrates to our members what participating
-							in an engineering project is all about from both a technical and interpersonal perspective.</p>
-						</div>
-					</div>
-			</div>
-		</div>
+		</section>
 
-		<!-- footer -->
-		<footer class="footernav transitioning">
-			<div class="columnsformat">
-				<a class="navlink" target="_blank" href="https://www.instagram.com/tamu_ssfe/">
-					Instagram <img src="insta.png" alt="" class="navlinkimg"></a>
-				<a class="navlink" target="_blank" href="https://www.linkedin.com/company/society-of-sonic-flight-engineers/">
-					LinkedIn <img src="linkedin.png" alt="" class="navlinkimg"></a>
-				<a class="navlink" target="_blank" href="mailto:ssfeleadership@gmail.com">
-					Email Us <img src="email.png" alt="" class="navlinkimg"></a>
-				<img src="SSFEcircle.png" alt="" class="footerlogo" style="border-radius: 50%;">
-				<div class="rowsformat">
-					<p style="font-size: 1vw; color: #EBEBEB; margin-block: 0.2vw;">H. R. Bright Building (HRBB)</p>
-					<p style="font-size: 1vw; color: #EBEBEB; margin-block: 0.2vw;">710 Ross St, College Station, TX 77840</p>
-					<p style="font-size: 1vw; color: #EBEBEB; margin-bottom: 0; margin-top: 2vw;">©2025 Society of Sonic Flight Engineers</p>
-				</div>
-			</div>
-		</footer>
+
+		<section class="fade-in-section" id="next-section">
+			<h2>V1... Rotate.</h2>
+			<p><b>SSFE</b> flew the Mach 6 on April 29th, 2026. Learn how we're analyzing and improving from it.</p>
+		</section>
+
+
+		<section class="media-hero-section scrim fade-in-section">
+		    <img src="media/photos/design2planeinlab.webp" alt="The Mach 6 being built in the lab">
+		</section>
+
+
+    	<!-- Mach 6 Section -->
+		<section class="media-hero-section scrim fade-in-section">
+		    <img src="media/photos/Mach6InFlight.webp" alt="The Mach 6 after rotate" style="object-position: right center;">
+		    <div class="bottom-overlay-text">
+		        <h2>V1... Rotate</h2>
+		        <p>The <b>Mach 6</b> flew on April 29th, 2026.</p>
+		    	<p>Learn how we're analyzing and improving from it.</p>
+		    </div>
+		</section>
+
+
+		<section class="fade-in-section">
+			<h2>Our Whole Process</h2>
+			<p>Hi everyone Google LLC is an American multinational technology corporation focused on information technology, online advertising, search engine technology, email, cloud computing, software, quantum computing, e-commerce, consumer electronics, and artificial intell</p>
+		</section>
+
+
+		<section class="fade-in-section">
+			<h2>Hi</h2>
+			<p>Hi everyone Google LLC is an American multinational technology corporation focused on information technology, online advertising, search engine technology, email, cloud computing, software, quantum computing, e-commerce, consumer electronics, and artificial intell</p>
+		</section>
+
+
+		<section class="fade-in-section">
+			<h2>Hi</h2>
+			<p>Hi everyone Google LLC is an American multinational technology corporation focused on information technology, online advertising, search engine technology, email, cloud computing, software, quantum computing, e-commerce, consumer electronics, and artificial intell</p>
+		</section>
+
+
+		<section class="fade-in-section">
+			<h2>Hi</h2>
+			<p>Hi everyone Google LLC is an American multinational technology corporation focused on information technology, online advertising, search engine technology, email, cloud computing, software, quantum computing, e-commerce, consumer electronics, and artificial intell</p>
+		</section>
+
 
 	</body>
+
 
 </html>
