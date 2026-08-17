@@ -1,12 +1,15 @@
 //Responsive Nav
-  function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
+// Hamburger toggle
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".hamburger").addEventListener("click", () => {
+      document.querySelector(".nav-list").classList.toggle("open");
+    });
+  });
+
+  // Header goes opaque on scroll
+  window.addEventListener("scroll", () => {
+    document.querySelector("header").classList.toggle("scrolled", window.scrollY > 0);
+  });
 
 
 //Fade in on scroll

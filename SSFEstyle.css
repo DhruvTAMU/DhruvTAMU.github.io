@@ -1,6 +1,7 @@
 /* GLOBAL PARAMS (MOSTLY COLORS)*/
     :root {
-      --bg-color: #1a2d40;
+      --bg-color: black;
+      --secondary-bg-color: #1a2d40;
       --main-txt-color: white;
       --secondary-text-color: #2c3e50;
       --accent-color: rgb(238, 123, 69);
@@ -60,15 +61,6 @@
     footer {
         width: 100%;
         justify-content: center;
-        background-color: #051e29;
-    }
-
-    header {
-        position: -webkit-sticky; /* For Safari support */
-        position: sticky;
-        top: 0;           /* This tells it to stop once it hits the very top */
-        z-index: 9999;
-        border-bottom: var(--std-border);
         background-color: black;
     }
 
@@ -99,11 +91,103 @@
         font-family: 'Futura-Book', sans-serif;
     }
 
+/* Header */
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        background: transparent;
+        transition: all 0.5s ease;
+    }
+
+    header.scrolled {
+        background: rgba(0, 0, 0, 0.75);
+        border-bottom: var(--std-border);
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: var(--std-padding);
+    }
+
+    .header-logo img {
+        max-width: 12rem;
+        padding-block: 0.5rem;
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        color: var(--main-txt-color);
+        text-decoration: none;
+        font-family: 'AmarilloUSAF', Arial, sans-serif;
+        font-size: 24px;
+    }
+
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--accent-color);
+        font-size: 2.5rem;
+        cursor: pointer;
+        margin-right: 0.5rem;
+        margin-left: auto;
+    }
+
+/* ── Mobile nav ── */
+    @media (max-width: 768px) {
+        .hamburger {
+            display: block;
+        }
+
+        .nav-list {
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            padding: var(--std-padding);
+            border-bottom: var(--std-border);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .nav-list.open {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .nav-list {
+            display: flex;
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            flex-direction: row;
+            background: none;
+            padding: 0;
+            border: none;
+        }
+    }
+
 /* Fade-in On Scroll */
     .fade-in-section {
       opacity: 0;
-      transform: translateY(60px);
-      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+      transform: translateY(40px);
+      transition: all 0.5s ease-out;
       will-change: opacity, transform; /* Optimizes browser rendering performance */
     }
 
@@ -114,6 +198,27 @@
     }
 
 /* Classes */
+    /* Text Buttons */
+        .text-button {
+            display: inline-block;
+            align-self: flex-start;
+            font-family: 'Futura-Book', sans-serif;
+            font-size: 24px;
+            color: var(--main-txt-color);
+            background-color: transparent;
+            text-decoration: none;
+            border: var(--std-border);
+            padding: 0.5rem 1.25rem;
+            transform-origin: left center;
+            transition: all 0.2s ease;
+        }
+
+        .text-button:hover,
+        .text-button:focus-visible {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            transform: scale(1.05);
+        }
 
 /* IDs */
     #title-header {
@@ -165,19 +270,30 @@
         z-index: 1;
     }
 
+    /* Keep the right side of the image in frame as the viewport narrows */
+    .focus-right img,
+    .focus-right video {
+        object-position: 100% center;
+    }
+
+    /* Scrim with the clear spot pulled toward the top right */
+    .scrim-top-right::after {
+        background: radial-gradient(ellipse at 75% 0%, transparent 20%, rgba(0,0,0,0.75) 100%);
+    }
+
     .glass::after {
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.5);       /* the shade — adjust opacity to taste */
-        backdrop-filter: blur(1px);              /* the glass blur */
-        -webkit-backdrop-filter: blur(1px);      /* Safari needs this */
+        background: rgba(0, 0, 0, 0.6);       /* the shade — adjust opacity to taste */
+        backdrop-filter: blur(0px);              /* the glass blur */
+        -webkit-backdrop-filter: blur(0px);      /* Safari needs this */
         z-index: 1;
     }
 
 /* Alternating Sections Fill Color */
     section:nth-child(odd) {
-      background-color: black;
+      background-color: var(--secondary-bg-color);
     }
 
     section:nth-child(even) {
